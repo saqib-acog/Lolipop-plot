@@ -1,0 +1,10 @@
+services:
+  lolipop-plot-frontend:
+    build: .
+    image: lolipop-plot-image
+    container_name: lolipop-plot-container
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
